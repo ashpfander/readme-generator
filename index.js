@@ -7,8 +7,6 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const questions = [
-    inquirer
-    .prompt([
     {
         type: 'input',
         message: 'What is the title of your project?',
@@ -55,21 +53,19 @@ const questions = [
         message: 'What is your email?',
         name: 'email',
     },
-  ])
-//   // Uses fs module to create the README.md file
-//   .then((answers) => {
-//     const createREADME = generateMarkdown(answers);
-
-//     fs.writeFile('README.md', createREADME, (err) =>
-//     err ? console.error(err) : console.log('README.md succesfully created!'));
-//   })
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+    err ? console.error(err) : console.log('README.md succesfully created!'));
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    // Uses inquirer package to prompt questions from questions array
+    inquirer.prompt(questions);
+}
 
 // Function call to initialize app
 init();
