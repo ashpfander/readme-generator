@@ -2,6 +2,8 @@
 // Grabs the inquirer and fs (file system) modules
 const inquirer = require('inquirer');
 const fs = require('fs');
+// Grabs the generateMarkdown.js file as well
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const questions = [];
