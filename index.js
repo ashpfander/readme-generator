@@ -64,7 +64,12 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     // Uses inquirer package to prompt questions from questions array
-    inquirer.prompt(questions);
+    inquirer.prompt(questions)
+    // Then takes the answers and populates them within the README file that will be created
+    .then((answers) => {
+        const createREADME = generateMarkdown(answers);
+        writeToFile('README.md', createREADME)
+    });
 }
 
 // Function call to initialize app
