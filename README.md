@@ -33,6 +33,10 @@
   THEN I am taken to the corresponding section of the README
   ```
 
+  ## Video Tutorial
+
+  [README Generator Walkthrough Video](./README-generator-walkthrough.webm)
+
   ## Table of Contents
 
   - [Installation](#installation)
