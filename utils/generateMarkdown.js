@@ -4,7 +4,8 @@ function renderLicenseBadge(license, data) {
   if (license === 'The Unlicense') {
     return '';
   } else {
-    return `![License badge](https://img.shields.io/github/license/${data.github}/${data.repo})`;
+    // Replaces spaces with underscores since the link needs underscores to work
+    return `![License badge](https://img.shields.io/badge/license-${data.license.replace(/\s/g, '_')}-blue)`;
   }
 }
 
@@ -25,8 +26,7 @@ function renderLicenseSection(license, data) {
     return '';
   } else {
     return `## License
-
-    ${data.license}`;
+  ${data.license}`;
   }
 }
 
