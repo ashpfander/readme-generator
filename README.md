@@ -35,7 +35,7 @@
 
   ## Video Tutorial
 
-  [README Generator Walkthrough Video](./README-generator-walkthrough.webm)
+  [README Generator Walkthrough Video](https://drive.google.com/file/d/1Z0h2iBV9_8bHyYQy2LSzcIe1mW47q7cM/view)
 
   ## Table of Contents
 
