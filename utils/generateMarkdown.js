@@ -70,8 +70,8 @@ function generateMarkdown(data) {
 
   ## Questions
 
-  Any questions you may have, please feel free to reach out to me using either contact.
-  GitHub Profile: https://github.com/${data.github}
+  Any questions you may have, please feel free to reach out to me using either contact.<br>
+  GitHub Profile: https://github.com/${data.github}<br>
   Email: ${data.email}
 `;
 }
